@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound"
+    tools:context=".TasbihActivity"
+    android:id="@+id/parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:padding="20dp"
+        android:text="@string/tasbih_text2"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTasbih" />
+
+    <Button
+        android:id="@+id/btnStartTasbih"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="@color/backgound"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasbihCounter" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="280dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroud_img" />
+
+    <TextView
+        android:id="@+id/textTasbih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:text="@string/tasbih_title"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:text="@string/tasbih_text"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnResetTasbih"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="@color/backgound"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartTasbih" />
+
+    <TextView
+        android:id="@+id/tasbihCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="150dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

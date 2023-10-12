@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound"
+    tools:context=".AdkarActivity">
+
+    <Button
+        android:id="@+id/btnAdkarSalat"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/adikr_backgound"
+        android:text="@string/adkar_salat"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:icon="@drawable/salat"
+        app:iconGravity="textEnd"
+        app:iconPadding="10dp"
+        app:iconSize="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <Button
+        android:id="@+id/btnAdkarSabah"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/text_color"
+        android:text="@string/adkar_sabah"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:icon="@drawable/sunrise"
+        app:iconGravity="textEnd"
+        app:iconPadding="10dp"
+        app:iconSize="33dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdkarSalat"
+        app:layout_constraintStart_toStartOf="@+id/btnAdkarSalat"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdkarSalat" />
+
+    <Button
+        android:id="@+id/btnAdkarNawm"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/salat_backgound"
+        android:text="@string/adkar_nawm"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:icon="@drawable/sleep"
+        app:iconGravity="textEnd"
+        app:iconPadding="10dp"
+        app:iconSize="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdkarMasae"
+        app:layout_constraintStart_toStartOf="@+id/btnAdkarMasae"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdkarMasae" />
+
+    <Button
+        android:id="@+id/btnAdkarMasae"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/aibar_backgound"
+        android:text="@string/adkar_masae"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:icon="@drawable/sunset"
+        app:iconGravity="textEnd"
+        app:iconPadding="10dp"
+        app:iconSize="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdkarSabah"
+        app:layout_constraintStart_toStartOf="@+id/btnAdkarSabah"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdkarSabah" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="389dp"
+        android:layout_height="275dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroud_img" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="15dp"
+        android:text="@string/adkar_title"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

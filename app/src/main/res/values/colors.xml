@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#D6D6D5</color>
+    <color name="adikr_backgound">#FAEA5F</color>
+    <color name="tasbih_backgound">#D8C6F8</color>
+    <color name="salat_backgound">#CDF4A0</color>
+    <color name="aibar_backgound">#9EEEF8</color>
+    <color name="backgound">#160503</color>
+    <color name="text_color">#C8A9A9</color>
+    <color name="icon_color">#D1C456</color>
+    <color name="radius_color">#BCA903</color>
+
+
+</resources>

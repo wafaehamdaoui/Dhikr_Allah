@@ -1,0 +1,26 @@
+<resources>e
+    <string name="app_name">Dhikr_Allah</string>
+    <string name="adikr">بوابة الأذكار</string>
+    <string name="tasbih">بوابة التسبيح </string>
+    <string name="salat">بوابة الصلاة على الرسول</string>
+    <string name="istighfar">بوابة الاستغفار</string>
+    <string name="aibar"> تأملات وعبر</string>
+    <string name="home_text">﴿ أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾</string>
+    <string name="tasbih_title">﴿ يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا * وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا ﴾</string>
+    <string name="tasbih_text"> سُبْـحَانَ اللهِ وَبِحَمْدِهِ سُبْـحَانَ اللهِ العَظِيمِ</string>
+    <string name="tasbih_text2"> سُبْحَانَ اللهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا اللهُ، وَاللهُ أَكْبَرُ </string>
+    <string name="start"> إبدأ </string>
+    <string name="reset"> إعادة ضبط </string>
+    <string name="salat_title"> قال رسول الله صلى الله عليه وسلم:`` من صلَّى عليَّ صلاةً واحدةً؛ صلَّى اللهُ عليه عشرَ صلواتٍ، وحطَّ عنه بها عشرَ سيئاتٍ، ورفعَه بها عشرَ درجات ``</string>
+    <string name="salat_text"> اللَّهمَّ صلِّ على محمَّدٍ وعلى آلِ محمَّدٍ كما صلَّيتَ علَى إبراهيمَ وعلَى آلِ إبراهيمَ، وبارِكْ على محمَّدٍ وعلى آلِ محمَّدٍ كما بارَكْتَ على إبراهيمَ وعلى آلِ إبراهيمَ في العالَمينَ إنَّكَ حميدٌ مجيدٌ</string>
+    <string name="istighfar_title"> ﴿ فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا﴾ </string>
+    <string name="istighfar_text2"> أَسْتَغْفِرُ الله العظيم وَأَتُوبُ إِلَيْه </string>
+    <string name="istighfar_text">  رَبِّ اغفرْ لي وَتبْ عَلَيَّ، إنَّكَ أَنتَ التوَّاب الرحيم </string>
+    <string name="adkar_title">﴿ وَالذَّاكِرِينَ اللَّهَ كَثِيرًا وَالذَّاكِرَاتِ أَعَدَّ اللَّهُ لَهُمْ مَغْفِرَةً وَأَجْرًا عَظِيمًا ﴾ </string>
+    <string name="adkar_sabah"> أذكار الصباح </string>
+    <string name="adkar_masae"> أذكار المساء </string>
+    <string name="adkar_nawm">  أذكار النوم </string>
+    <string name="adkar_salat"> أذكار بعد الصلاة </string>
+
+
+</resources>
