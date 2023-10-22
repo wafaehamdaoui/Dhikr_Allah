@@ -9,6 +9,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d("success","millis "+System.currentTimeMillis());
+        System.out.println("millis "+System.currentTimeMillis());
 
         notificationChannel();
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
@@ -37,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 tasbihIntent.putExtra("tasbihTitle", "لا تنسى أن تسبح لله");
                 tasbihIntent.putExtra("tasbihText", "قال تعالى ﴿ فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا ﴾ [النَّصر: 3]");
                 PendingIntent pendingIntent1 = PendingIntent.getBroadcast(getApplicationContext(), 0, tasbihIntent, PendingIntent.FLAG_IMMUTABLE);
-                setNotifAlarm(60*1000,17,20,pendingIntent1);
+                setNotifAlarm(60*1000,18,0,pendingIntent1);
+
             }
         });
         btnSalat.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 salatIntent.putExtra("salatTitle", "لا تنسى الصلاة على النبي");
                 salatIntent.putExtra("salatText", "قال تعالى: ﴿ إِنَّ اللَّـهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا ﴾");
                 PendingIntent pendingIntent3 = PendingIntent.getBroadcast(getApplicationContext(), 1, salatIntent, PendingIntent.FLAG_IMMUTABLE);
-                setNotifAlarm(5*60*1000,18,40,pendingIntent3);
+                setNotifAlarm(60*1000,18,45,pendingIntent3);
             }
         });
         btnIstighfar.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 istighfarIntent.putExtra("istighfarTitle", "لا تنسى أن تستغفر الله");
                 istighfarIntent.putExtra("istighfarText", "من لزم الاستغفار جعل الله له من كل هم فرجا, ومن كل ضيق مخرجا, ورزقه من حيث لا يحتسب");
                 PendingIntent pendingIntent2 = PendingIntent.getBroadcast(getApplicationContext(), 1, istighfarIntent, PendingIntent.FLAG_IMMUTABLE);
-                setNotifAlarm(5*60*1000,18,40,pendingIntent2);
+                setNotifAlarm(60*1000,18,40,pendingIntent2);
             }
         });
         btnAdikr.setOnClickListener(new View.OnClickListener() {
