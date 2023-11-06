@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 tasbihIntent.putExtra("tasbihTitle", "لا تنسى أن تسبح لله");
                 tasbihIntent.putExtra("tasbihText", "قال تعالى ﴿ فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا ﴾ [النَّصر: 3]");
                 PendingIntent pendingIntent1 = PendingIntent.getBroadcast(getApplicationContext(), 0, tasbihIntent, PendingIntent.FLAG_IMMUTABLE);
-                setNotifAlarm(60*1000,18,0,pendingIntent1);
+                setNotifAlarm(3*60*1000,07,30,pendingIntent1);
 
             }
         });
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 salatIntent.putExtra("salatTitle", "لا تنسى الصلاة على النبي");
                 salatIntent.putExtra("salatText", "قال تعالى: ﴿ إِنَّ اللَّـهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا ﴾");
                 PendingIntent pendingIntent3 = PendingIntent.getBroadcast(getApplicationContext(), 1, salatIntent, PendingIntent.FLAG_IMMUTABLE);
-                setNotifAlarm(60*1000,18,45,pendingIntent3);
+                setNotifAlarm(3*60*1000,12,15,pendingIntent3);
             }
         });
         btnIstighfar.setOnClickListener(new View.OnClickListener() {
@@ -67,13 +67,21 @@ public class MainActivity extends AppCompatActivity {
                 istighfarIntent.putExtra("istighfarTitle", "لا تنسى أن تستغفر الله");
                 istighfarIntent.putExtra("istighfarText", "من لزم الاستغفار جعل الله له من كل هم فرجا, ومن كل ضيق مخرجا, ورزقه من حيث لا يحتسب");
                 PendingIntent pendingIntent2 = PendingIntent.getBroadcast(getApplicationContext(), 1, istighfarIntent, PendingIntent.FLAG_IMMUTABLE);
-                setNotifAlarm(60*1000,18,40,pendingIntent2);
+                setNotifAlarm(3*60*1000,19,00,pendingIntent2);
             }
         });
         btnAdikr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,AdkarActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnAibar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, StandarActivity.class);
+                intent.putExtra("time","aibar");
                 startActivity(intent);
             }
         });

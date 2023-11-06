@@ -93,8 +93,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="389dp"
-        android:layout_height="275dp"
+        android:layout_width="405dp"
+        android:layout_height="215dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -110,6 +110,7 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold|italic"
+        android:textColor="@color/text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
